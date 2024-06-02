@@ -29,7 +29,7 @@ const Sidebar = (props: Props) => {
           {a.map(() => {
             return (
               <>
-                <div className="bg-red-700 rounded-full flex justify-center items-center w-10 h-10 p-2 mr-4 duration-150 hover:-translate-y-1.5">
+                <div className="bg-black rounded-full flex justify-center items-center w-10 h-10 p-2 mr-4 duration-150 hover:-translate-y-1.5">
                   <Twitter size={20} />
                 </div>
               </>
