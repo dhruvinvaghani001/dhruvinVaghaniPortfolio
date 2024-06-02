@@ -15,7 +15,6 @@ import react from "./react.svg";
 import redux from "./redux.svg";
 import tailwindcss from "./tailwindcss.svg";
 import ts from "./ts.svg";
-import typescript from "./Typescript.svg";
 
 export {
   css,
@@ -35,5 +34,4 @@ export {
   redux,
   tailwindcss,
   ts,
-  typescript,
 };
