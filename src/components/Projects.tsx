@@ -26,31 +26,26 @@ const Project = (props: Project) => {
     <div>
       <Card className="h-full flex flex-col">
         <CardHeader className="">
-          {/* <props.icon className="text-card-foreground" width={22} /> */}
           <CardTitle>{props.projectName}</CardTitle>
         </CardHeader>
         <CardContent className="flex-grow">
-          <ul className="list-disc text-white">
+          <ul className="list-disc">
             {props.projectFeatures.map((item) => {
               return (
                 <>
-                  <li>{item}</li>
+                  <li className="">{item}</li>
                 </>
               );
             })}
           </ul>
         </CardContent>
-        <CardFooter className="flex flex-col items-start justify-center gap-2">
+        <CardFooter className="">
           <div className="flex flex-wrap gap-2">
             {props.techStack.map((e) => {
               return (
                 <Badge className="flex justify-center items-center">{e}</Badge>
               );
             })}
-          </div>
-          <div>
-            <p>Github Link</p>
-            <p>Code</p>
           </div>
         </CardFooter>
       </Card>

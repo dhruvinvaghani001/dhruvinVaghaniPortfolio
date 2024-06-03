@@ -1,7 +1,7 @@
 import React from "react";
 import techs from "@/lib/skills";
 import { Card, CardContent, CardHeader } from "./ui/card";
-import TechIcon from "./ui/TechIcon";
+import TechIcon from "./TechIcon";
 
 type Props = {};
 
@@ -13,7 +13,7 @@ const TechStack = (props: Props) => {
           <CardHeader className="text-2xl font-bold mb-4 text-center capitalize">
             {item.name}
           </CardHeader>
-          <CardContent className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <CardContent className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-4">
             {item.techs.map((tech) => (
               <TechIcon icon={tech.icon} name={tech.name} />
             ))}

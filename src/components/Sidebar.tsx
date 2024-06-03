@@ -1,12 +1,12 @@
 import React from "react";
-import { ModeToggle } from "./ToggleButton";
-import { Badge, Link, Twitter } from "lucide-react";
-import { badgeVariants } from "./ui/badge";
+import { Badge } from "lucide-react";
+import Link from "next/link";
+import socialLinks from "@/lib/socialLinks";
+import Image from "next/image";
 
 type Props = {};
 
 const Sidebar = (props: Props) => {
-  const a = [1, 2, 3];
   return (
     <>
       <div className="px-4 py-16 flex flex-col justify-center">
@@ -17,21 +17,25 @@ const Sidebar = (props: Props) => {
           ></div>
           <div className="flex flex-col items-center justify-center mt-3    ">
             <div>
-              <h1 className="font-bold text-3xl">Dhruvin Vaghani</h1>
+              <h1 className="font-bold text-3xl text-center">
+                Dhruvin Vaghani
+              </h1>
             </div>
 
-            <div className="description flex flex-col justify-end items-center mt-2 gap-2">
+            <div className="description flex flex-col justify-end items-center mt-2 gap-2 text-center">
               <p>I am a programmer and web developer from India.</p>
             </div>
           </div>
         </div>
         <div className="contacts flex justify-center mt-8 px-[100px]">
-          {a.map(() => {
+          {socialLinks.map((social) => {
             return (
               <>
-                <div className="bg-black rounded-full flex justify-center items-center w-10 h-10 p-2 mr-4 duration-150 hover:-translate-y-1.5">
-                  <Twitter size={20} />
-                </div>
+                <Link href={social.profileLink} target="_blank">
+                  <div className="bg-[#1A222E] cursor-pointer rounded-full flex justify-center items-center w-12 h-12 p-2  mr-4 duration-200 hover:-translate-y-1.5  hover:text-violet-600">
+                    <social.icon className="" />
+                  </div>
+                </Link>
               </>
             );
           })}

@@ -9,9 +9,9 @@ type Props = {
 const TechIcon: React.FC<Props> = (props: Props) => {
   return (
     <>
-      <div className="rounded-lg bg-[#1A222E] p-4 duration-700 shadow-inner shadow-gray-600 text-center w-full hover:shadow-inner hover:shadow-gray-400">
+      <div className="rounded-lg bg-[#1A222E] p-4 duration-700 shadow-inner shadow-gray-600 text-center hover:shadow-inner hover:shadow-gray-400">
         <div className="flex justify-center mb-2">
-          <Image src={props.icon} alt={props.name} width={60} />
+          <Image src={props.icon} alt={props.name} width={50} />
         </div>
         <p className="font-bold capitalize">{props.name}</p>
       </div>
