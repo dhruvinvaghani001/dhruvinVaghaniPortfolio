@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Dhruvin Vaghani",
@@ -14,6 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <body>
         <ThemeProvider
           attribute="class"

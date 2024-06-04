@@ -42,7 +42,7 @@ const ProjectCard = (props: Project) => {
             <div className="flex flex-wrap gap-2">
               {props.techStack.map((e) => {
                 return (
-                  <Badge className="flex justify-center items-center">
+                  <Badge className="flex justify-center items-center px-3 font-semibold">
                     {e}
                   </Badge>
                 );

@@ -1,20 +1,22 @@
+"use client";
 import React from "react";
-import { Badge } from "lucide-react";
 import Link from "next/link";
 import socialLinks from "@/lib/socialLinks";
+import { Button } from "./ui/button";
+import { Mail } from "lucide-react";
 import Image from "next/image";
+import { profile } from "@/assets/skills";
 
 type Props = {};
 
 const Sidebar = (props: Props) => {
   return (
     <>
-      <div className="px-4 py-16 flex flex-col justify-center">
+      <div className="px-4 py-16 flex flex-col justify-center items-center">
         <div className="profile flex flex-col items-center justify-center">
-          <div
-            className="w-[200px] h-[200px] rounded-full "
-            style={{ backgroundColor: "#9473ED" }}
-          ></div>
+          <div className="w-[200px] h-[200px] rounded-full ">
+            <Image src={profile} alt="bg" className="rounded-full" />
+          </div>
           <div className="flex flex-col items-center justify-center mt-3    ">
             <div>
               <h1 className="font-bold text-3xl text-center">
@@ -39,6 +41,14 @@ const Sidebar = (props: Props) => {
               </>
             );
           })}
+        </div>
+        <div className="mt-10">
+          <Link href="mailto:dhruvinvaghani0011@gmail.com">
+            <Button className="flex gap-2 rounded-full">
+              <Mail />
+              Get in Touch
+            </Button>
+          </Link>
         </div>
       </div>
     </>
