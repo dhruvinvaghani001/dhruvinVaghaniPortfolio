@@ -9,7 +9,7 @@ const ContactSection = (props: Props) => {
   return (
     <div>
       <div className="heading mb-10 pb-10">
-        <h2 className="font-bold text-2xl md:text-3xl tracking-wide">
+        <h2 className="text-center md:text-start font-bold text-2xl md:text-3xl tracking-wide">
           Contact
         </h2>
         <p className="mt-6 text-lg">
