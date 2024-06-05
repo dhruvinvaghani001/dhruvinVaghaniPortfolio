@@ -12,7 +12,7 @@ type Props = {};
 const Sidebar = (props: Props) => {
   return (
     <>
-      <div className="pt-8 pb-0 md:py-16 flex flex-col justify-center items-center">
+      <div className="pt-12 pb-0 md:py-16 flex flex-col justify-center items-center">
         <div className="profile flex flex-col items-center justify-center">
           <div className="">
             <Image
