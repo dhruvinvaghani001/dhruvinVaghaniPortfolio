@@ -8,6 +8,7 @@ import {
 } from "./ui/card";
 import { Github, GlobeLock, LucideIcon } from "lucide-react";
 import { Badge } from "./ui/badge";
+import Image from "next/image";
 
 type Project = {
   icon: LucideIcon;
@@ -19,20 +20,28 @@ type Project = {
 };
 
 const ProjectCard = (props: Project) => {
+  console.log(props);
   const features = props.projectFeatures;
   return (
     <>
       <div>
         <Card className="h-full flex flex-col">
           <CardHeader className="p-6">
-            <CardTitle>{props.projectName}</CardTitle>
+            <CardTitle className="tracking-wider">
+              <div className="flex items-center">
+                <props.icon className="mr-4" />
+                {props.projectName}
+              </div>
+            </CardTitle>
           </CardHeader>
           <CardContent className="flex-grow px-10 py-6">
-            <ul className="list-disc text-white">
+            <ul className="list-disc">
               {features.map((item) => {
                 return (
                   <>
-                    <li className="leading-7">{item}</li>
+                    <li className="leading-7 tracking-wide text-lg lg:text-base mb-1">
+                      {item}
+                    </li>
                   </>
                 );
               })}
@@ -42,7 +51,10 @@ const ProjectCard = (props: Project) => {
             <div className="flex flex-wrap gap-2">
               {props.techStack.map((e) => {
                 return (
-                  <Badge className="flex justify-center items-center px-3 font-semibold">
+                  <Badge
+                    className="flex justify-center items-center px-3 font-semibold"
+                    variant="secondary"
+                  >
                     {e}
                   </Badge>
                 );

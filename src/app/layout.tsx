@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import Head from "next/head";
+import { Lato } from "next/font/google";
+
+const lato = Lato({
+  subsets: ["latin"], // you can specify other subsets as needed
+  weight: ["400", "700", "900"], // specify the weights you need
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Dhruvin Vaghani",
@@ -15,13 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
-      <body>
+      <body className={lato.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

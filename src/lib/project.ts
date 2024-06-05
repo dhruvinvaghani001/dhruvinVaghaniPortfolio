@@ -1,4 +1,9 @@
-import { MessageCircleCode } from "lucide-react";
+import {
+  MessageCircleCode,
+  Youtube,
+  BookOpen,
+  Fingerprint,
+} from "lucide-react";
 
 const projectsData = [
   {
@@ -26,7 +31,7 @@ const projectsData = [
     ],
   },
   {
-    img: MessageCircleCode,
+    icon: Youtube,
     projectName: "Y-TV - Youtube backend ",
     liveDemo: "",
     githubRepo: "",
@@ -40,7 +45,7 @@ const projectsData = [
     techStack: ["Node js", "Express js", "MongoDb", "Aggragation", "REST API"],
   },
   {
-    img: MessageCircleCode,
+    icon: Fingerprint,
     projectName: "Authy - Full Stack Authentication System",
     liveDemo: "",
     githubRepo: "",
@@ -53,7 +58,7 @@ const projectsData = [
     techStack: ["Next js", "Resend Email", "next-auth-js", "MongoDb"],
   },
   {
-    img: MessageCircleCode,
+    icon: BookOpen,
     projectName: "E-learning - Frontend Design",
     liveDemo: "",
     githubRepo: "",

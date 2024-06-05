@@ -1,4 +1,4 @@
-import { Badge, Github, Linkedin, Twitter } from "lucide-react";
+import { Badge, Github, Instagram, Linkedin, Twitter } from "lucide-react";
 
 const socialLinks = [
   {

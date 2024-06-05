@@ -12,10 +12,15 @@ type Props = {};
 const Sidebar = (props: Props) => {
   return (
     <>
-      <div className="px-4 py-16 flex flex-col justify-center items-center">
+      <div className="py-4 md:py-16 flex flex-col justify-center items-center">
         <div className="profile flex flex-col items-center justify-center">
-          <div className="w-[200px] h-[200px] rounded-full ">
-            <Image src={profile} alt="bg" className="rounded-full" />
+          <div className="">
+            <Image
+              src={profile}
+              alt="bg"
+              className="rounded-full"
+              width={200}
+            />
           </div>
           <div className="flex flex-col items-center justify-center mt-3    ">
             <div>
@@ -29,7 +34,7 @@ const Sidebar = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className="contacts flex justify-center mt-8 px-[100px]">
+        <div className="contacts flex justify-center mt-8">
           {socialLinks.map((social) => {
             return (
               <>

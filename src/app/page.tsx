@@ -1,19 +1,18 @@
 "use client";
-import ProjectCard from "@/components/ProjectCard";
+
 import ContactSection from "@/components/section/ContactSection";
 import ProjectSection from "@/components/section/ProjectSection";
 import TechSection from "@/components/section/TechSection";
 import Sidebar from "@/components/Sidebar";
-import Skiils from "@/components/Skiils";
-import { projectsData } from "@/lib/project";
+
 
 export default function Home() {
   return (
     <main className="h-screen flex flex-col lg:grid lg:grid-cols-[25%_auto] ">
-      <div className="lg:sticky lg:top-0;">
+      <div className="inline-block lg:sticky lg:top-0;">
         <Sidebar />
       </div>
-      <div className="lg:overflow-y-auto h-screen py-16 px-8 lg:px-0">
+      <div className="lg:overflow-y-auto h-screen py-16 lg:px-0 px-6">
         <div className="lg:container">
           <div className="heading_content lg:text-start text-center gap-y-4 pb-12 border-b-2">
             <h1
