@@ -15,6 +15,8 @@ import {
   redux,
   mongodb,
   postman,
+  php,
+  python,
 } from "@/assets/skills";
 
 const techs = [
@@ -37,7 +39,9 @@ const techs = [
       { name: "nodejs", icon: nodejs },
       { name: "expressjs", icon: expressjs },
       { name: "mongoDb", icon: mongodb },
+      { name: "php", icon: php },
       { name: "laravel", icon: laravel },
+      { name: "python", icon: python },
     ],
   },
   {

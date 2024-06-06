@@ -5,7 +5,6 @@ import ProjectSection from "@/components/section/ProjectSection";
 import TechSection from "@/components/section/TechSection";
 import Sidebar from "@/components/Sidebar";
 
-
 export default function Home() {
   return (
     <main className="h-screen flex flex-col lg:grid lg:grid-cols-[25%_auto] ">

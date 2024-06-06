@@ -16,6 +16,7 @@ import redux from "./redux.svg";
 import tailwindcss from "./tailwindcss.svg";
 import ts from "./ts.svg";
 import profile from "../profile.jpg";
+import php from "./php.svg";
 
 export {
   css,
@@ -36,4 +37,5 @@ export {
   tailwindcss,
   ts,
   profile,
+  php,
 };
