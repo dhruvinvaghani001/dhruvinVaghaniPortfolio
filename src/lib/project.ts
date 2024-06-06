@@ -8,7 +8,7 @@ import {
 const projectsData = [
   {
     icon: MessageCircleCode,
-    projectName: "Chitty - Full Stack Chat Website",
+    projectName: "TalkFusion - Full Stack Chat Website",
     liveDemo: "",
     githubRepo: "",
     projectFeatures: [
