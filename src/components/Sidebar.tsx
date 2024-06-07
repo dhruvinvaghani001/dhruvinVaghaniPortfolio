@@ -6,13 +6,14 @@ import { Button } from "./ui/button";
 import { Mail } from "lucide-react";
 import Image from "next/image";
 import { profile } from "@/assets/skills";
+import { ModeToggle } from "./ToggleButton";
 
 type Props = {};
 
 const Sidebar = (props: Props) => {
   return (
     <>
-      <div className="relative lg:fixed top-0 left-0 w-full lg:w-[28rem] pt-12 pb-8 lg:py-16 flex items-center flex-col gap-y-4 lg:h-screen">
+      <div className=" pt-12 pb-8 lg:py-16 flex items-center flex-col gap-y-4 lg:h-screen">
         <div className="profile flex flex-col items-center justify-center">
           <div className="">
             <Image
@@ -39,7 +40,7 @@ const Sidebar = (props: Props) => {
             return (
               <>
                 <Link href={social.profileLink} target="_blank">
-                  <div className="bg-[#1A222E] cursor-pointer rounded-full flex justify-center items-center w-12 h-12 p-2  mr-4 duration-200 hover:-translate-y-1.5  hover:text-violet-600">
+                  <div className="bg-muted cursor-pointer rounded-full flex justify-center items-center w-12 h-12 p-2  mr-4 duration-200 hover:-translate-y-1.5  hover:text-violet-600">
                     <social.icon className="" />
                   </div>
                 </Link>
@@ -49,7 +50,7 @@ const Sidebar = (props: Props) => {
         </div>
         <div className="mt-10">
           <Link href="mailto:dhruvinvaghani0011@gmail.com">
-            <Button className="flex gap-2 rounded-full">
+            <Button className="flex gap-2 rounded-full text-background font-bold">
               <Mail />
               Get in Touch
             </Button>
