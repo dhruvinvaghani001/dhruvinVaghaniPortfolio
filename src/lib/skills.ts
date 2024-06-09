@@ -17,6 +17,7 @@ import {
   postman,
   php,
   python,
+  mysql,
 } from "@/assets/skills";
 
 const techs = [
@@ -41,6 +42,7 @@ const techs = [
       { name: "mongoDb", icon: mongodb },
       { name: "php", icon: php },
       { name: "laravel", icon: laravel },
+      { name: "MySql", icon: mysql },
       { name: "python", icon: python },
     ],
   },

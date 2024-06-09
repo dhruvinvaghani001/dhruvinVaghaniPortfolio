@@ -17,6 +17,7 @@ import tailwindcss from "./tailwindcss.svg";
 import ts from "./ts.svg";
 import profile from "../profile.jpg";
 import php from "./php.svg";
+import mysql from "./mysql.svg";
 
 export {
   css,
@@ -38,4 +39,5 @@ export {
   ts,
   profile,
   php,
+  mysql,
 };
